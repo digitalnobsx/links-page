@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'primereact/resources/themes/saga-purple';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
+import 'primeflex/primeflex.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Avatar } from 'primereact/avatar';
+import PrimeReact from 'primereact/api';
+
+
+function App () {
+  const data = {
+    name: 'Itoro Joseph',
+    image: 'http://github.com/digitalnobsx',
+    links: [
+      {
+        name: "Twitter",
+        url: "http://twitter.com/digitalnobsx",
+        icon: "twitter",
+      },
+      {
+        name: "Zuri Team",
+        url: "https://training.zuri.team/",
+        icon: "",
+      },
+    ]
+  }
+  return <div className="App">App</div>;
 }
 
 export default App;
